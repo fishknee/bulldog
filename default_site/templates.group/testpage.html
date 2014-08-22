@@ -1,1 +1,17 @@
-test
+<?php
+$content = "";
+for($i=0;$i<5;$i++)
+{
+	$content .= "<p>test " . $i . "</p>";
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <?php echo $content; ?>
+  </body>
+</html>
