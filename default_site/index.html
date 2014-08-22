@@ -1,0 +1,26 @@
+{embed="includes/.header"}
+{embed="includes/.sliders-home"}
+<!-- BEGIN HOME CONTENT -->
+<div id="home_content_body">
+	<div class="home_content_body_container">
+	{exp:channel:entries channel="homepage" dynamic="off" limit="1" entry_id="1"}
+		<h1>{homeheader}</h1>
+			<div class="home_content">
+				<div class="home_content_left">
+					<p>{homedesc}</p>
+				</div>
+				<div class="home_content_center">
+					<iframe width="345" height="185" src="//www.youtube.com/embed/7wd1SwiEIYw?hd=1&amp;rel=0&amp;autohide=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+	{/exp:channel:entries}
+				<div class="home_content_right">
+					<div class="home_content_right_header">
+						<h4>News</h4>
+					</div>
+	{embed="includes/.facebook"}
+				</div>
+			</div>
+	</div>
+</div>
+<!-- END HOME CONTENT -->
+{embed="includes/.footer"}
